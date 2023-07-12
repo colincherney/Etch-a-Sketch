@@ -2,4 +2,12 @@
   display: flex;
   width: 464px;
   flex-wrap: wrap;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.grid {
+  height: 25px;
+  width: 25px;
+  border: solid 2px black;
 }
