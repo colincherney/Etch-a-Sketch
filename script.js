@@ -73,6 +73,15 @@ function color(color) {
   }
 }
 
+function rainbow() {
+  for (i = 0; i < divs; i++) {
+    grid[i].onmouseover = function () {
+      this.style.backgroundColor =
+        "#" + (((1 << 24) * Math.random()) | 0).toString(16).padStart(6, "0");
+    };
+  }
+}
+
 function reset() {
   for (i = 0; i < divs; i++) {
     grid[i].style.backgroundColor = "white";

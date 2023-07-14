@@ -28,25 +28,16 @@ body {
   gap: 50px;
 }
 
-.reset {
-  height: 50px;
-  width: 100px;
-  margin-top: 20px;
-}
-
 .sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.color {
-  width: 83px;
-}
-
 .label {
   margin-top: 20px;
   color: salmon;
+  font-weight: bold;
 }
 
 .code {
@@ -65,4 +56,36 @@ body {
   border-radius: 20px;
   padding: 5px;
   padding-top: 0px;
+}
+
+#rainbow {
+  margin-top: 15px;
+}
+
+.color {
+  background-color: darkslateblue;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  width: 83px;
+}
+
+.color:hover {
+  transform: scale(1.1);
+}
+
+.color:active {
+  background-color: red;
+  border: 5px black solid;
+}
+
+#go {
+  width: 33.8px;
+}
+
+#reset {
+  margin-top: 20px;
 }

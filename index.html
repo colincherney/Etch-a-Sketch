@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="combine">
@@ -21,10 +27,11 @@
           <button class="color" onclick="color('green')">Green</button>
           <button class="color" onclick="color('blue')">Blue</button>
         </div>
+        <button class="color" id="rainbow" onclick="rainbow()">Rainbow</button>
         <label class="label" for="text">Color Code (EX: #DAA520): </label>
         <div class="goButton">
           <input type="text" class="code" id="colorCode" />
-          <button id="go" onclick="customColor()">Go</button>
+          <button id="go" onclick="customColor()" class="color">Go</button>
         </div>
         <div class="dimensionsSlider">
           <p id="dimensionsText">16 x 16</p>
@@ -37,7 +44,7 @@
             onchange="dimensions()"
           />
         </div>
-        <button onclick="reset()" class="reset">Reset</button>
+        <button onclick="reset()" class="color" id="reset">Reset</button>
       </div>
       <div id="container"></div>
     </div>
