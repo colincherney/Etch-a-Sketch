@@ -12,10 +12,12 @@ gridSetup();
 
 const grid = document.getElementsByClassName("grid");
 
-for (i = 0; i < 256; i++) {
-  grid[i].onmouseover = function () {
-    this.style.backgroundColor = "black";
-  };
+function color(color) {
+  for (i = 0; i < 256; i++) {
+    grid[i].onmouseover = function () {
+      this.style.backgroundColor = color;
+    };
+  }
 }
 
 function reset() {
