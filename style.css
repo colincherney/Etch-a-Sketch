@@ -53,6 +53,16 @@ body {
   text-align: center;
 }
 
-.slider {
+#dimensionsText {
+  margin-bottom: 0px;
+  color: antiquewhite;
+}
+
+.dimensionsSlider {
+  border: 2px solid white;
+  text-align: center;
   margin-top: 10px;
+  border-radius: 20px;
+  padding: 5px;
+  padding-top: 0px;
 }

@@ -1,5 +1,6 @@
 let divs = 0;
 
+// grid setup on page load
 function gridSetup(divCount) {
   let counter = 0;
   divs = divCount * divCount;
@@ -18,6 +19,26 @@ function gridSetup(divCount) {
 }
 
 gridSetup(16);
+
+function dimensions() {
+  let dimensions = document.getElementById("slider").value;
+
+  if (dimensions == 1) {
+    document.getElementById("dimensionsText").innerHTML = "4 x 4";
+  }
+  if (dimensions == 2) {
+    document.getElementById("dimensionsText").innerHTML = "8 x 8";
+  }
+  if (dimensions == 3) {
+    document.getElementById("dimensionsText").innerHTML = "16 x 16";
+  }
+  if (dimensions == 4) {
+    document.getElementById("dimensionsText").innerHTML = "25 x 25";
+  }
+  if (dimensions == 5) {
+    document.getElementById("dimensionsText").innerHTML = "50 x 50";
+  }
+}
 
 const grid = document.getElementsByClassName("grid");
 
