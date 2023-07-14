@@ -17,3 +17,9 @@ for (i = 0; i < 256; i++) {
     this.style.backgroundColor = "black";
   };
 }
+
+function reset() {
+  for (i = 0; i < 256; i++) {
+    grid[i].style.backgroundColor = "white";
+  }
+}

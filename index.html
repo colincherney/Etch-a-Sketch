@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="container"></div>
+    <div class="combine">
+      <div class="sidebar">
+        <h1 id="header">Etch-a-Sketch</h1>
+        <button onclick="reset()" class="reset">Reset</button>
+      </div>
+      <div id="container"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
