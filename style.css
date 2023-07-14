@@ -1,3 +1,8 @@
+body {
+  background-image: url(mountains.jpg);
+  background-size: 100%;
+}
+
 #container {
   display: flex;
   width: 400px;
@@ -9,10 +14,17 @@
 .grid {
   height: 25px;
   width: 25px;
+  background-color: white;
 }
 
 #header {
   font-family: "Rubik Dirt", cursive;
+  color: salmon;
+  font-size: 50px;
+  background-color: wheat;
+  border: 1px dotted black;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .combine {
