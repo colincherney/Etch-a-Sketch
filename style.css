@@ -11,12 +11,6 @@ body {
   border: solid 2px black;
 }
 
-.grid {
-  height: 25px;
-  width: 25px;
-  background-color: white;
-}
-
 #header {
   font-family: "Rubik Dirt", cursive;
   color: salmon;
@@ -52,8 +46,13 @@ body {
 
 .label {
   margin-top: 20px;
+  color: salmon;
 }
 
 .code {
   text-align: center;
+}
+
+.slider {
+  margin-top: 10px;
 }
