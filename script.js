@@ -20,23 +20,37 @@ function gridSetup(divCount) {
 
 gridSetup(16);
 
+function removeGrid() {
+  document.querySelectorAll(".grid").forEach((e) => e.remove());
+}
+
 function dimensions() {
   let dimensions = document.getElementById("slider").value;
 
   if (dimensions == 1) {
     document.getElementById("dimensionsText").innerHTML = "4 x 4";
+    removeGrid();
+    gridSetup(4);
   }
   if (dimensions == 2) {
     document.getElementById("dimensionsText").innerHTML = "8 x 8";
+    removeGrid();
+    gridSetup(8);
   }
   if (dimensions == 3) {
     document.getElementById("dimensionsText").innerHTML = "16 x 16";
+    removeGrid();
+    gridSetup(16);
   }
   if (dimensions == 4) {
     document.getElementById("dimensionsText").innerHTML = "25 x 25";
+    removeGrid();
+    gridSetup(25);
   }
   if (dimensions == 5) {
     document.getElementById("dimensionsText").innerHTML = "50 x 50";
+    removeGrid();
+    gridSetup(50);
   }
 }
 
