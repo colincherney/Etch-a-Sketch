@@ -12,6 +12,15 @@ gridSetup();
 
 const grid = document.getElementsByClassName("grid");
 
+function customColor(color) {
+  color = document.getElementById("colorCode").value;
+  for (i = 0; i < 256; i++) {
+    grid[i].onmouseover = function () {
+      this.style.backgroundColor = color;
+    };
+  }
+}
+
 function color(color) {
   for (i = 0; i < 256; i++) {
     grid[i].onmouseover = function () {

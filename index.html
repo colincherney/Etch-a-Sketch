@@ -21,6 +21,11 @@
           <button class="color" onclick="color('green')">Green</button>
           <button class="color" onclick="color('blue')">Blue</button>
         </div>
+        <label class="label" for="text">Color Code (EX: #DAA520): </label>
+        <div class="goButton">
+          <input type="text" class="code" id="colorCode" />
+          <button id="go" onclick="customColor()">Go</button>
+        </div>
         <button onclick="reset()" class="reset">Reset</button>
       </div>
       <div id="container"></div>
