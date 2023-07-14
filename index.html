@@ -41,7 +41,14 @@
             max="100"
             value="50"
             id="slider"
-            oninput="dimensions()"
+            oninput="dimensions(value)"
+          />
+          <input
+            type="text"
+            class="dimensionsInput"
+            placeholder="Enter Number"
+            id="dimensionsInput"
+            oninput="dimensionsInput()"
           />
         </div>
         <button onclick="reset()" class="color" id="reset">Reset</button>

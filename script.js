@@ -24,13 +24,30 @@ function removeGrid() {
   document.querySelectorAll(".grid").forEach((e) => e.remove());
 }
 
-function dimensions() {
-  let dimensions = document.getElementById("slider").value;
-
-  let text = dimensions + " x " + dimensions;
+function dimensions(value) {
+  let text = value + " x " + value;
   document.getElementById("dimensionsText").innerHTML = text;
   removeGrid();
-  gridSetup(dimensions);
+  gridSetup(value);
+}
+
+function dimensionsInput() {
+  let value = document.getElementById("dimensionsInput").value;
+  if (value > 100) {
+    dimensions(50);
+    alert("ERROR! 100 is the max limit!");
+    document.getElementById("slider").value = 50;
+    document.getElementById("dimensionsInput").value = 50;
+  }
+  if (value < 0) {
+    dimensions(50);
+    document.getElementById("dimensionsInput").value = 50;
+    document.getElementById("slider").value = 50;
+  }
+  if (value > 0 && value < 101) {
+    dimensions(value);
+    document.getElementById("slider").value = value;
+  }
 }
 
 const grid = document.getElementsByClassName("grid");
