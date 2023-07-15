@@ -97,3 +97,21 @@ body {
   width: 90px;
   text-align: center;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+.fa_custom {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
