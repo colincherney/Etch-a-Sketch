@@ -25,8 +25,14 @@ function removeGrid() {
 }
 
 function dimensions(value) {
+  let buttonReset = document.getElementsByClassName("color");
+  for (i = 0; i < 5; i++) {
+    buttonReset[i].style.backgroundColor = "darkslateblue";
+    buttonReset[i].style.border = "none";
+  }
   let text = value + " x " + value;
   document.getElementById("dimensionsText").innerHTML = text;
+  document.getElementById("dimensionsInput").value = value;
   removeGrid();
   gridSetup(value);
 }
@@ -53,6 +59,13 @@ function dimensionsInput() {
 const grid = document.getElementsByClassName("grid");
 
 function customColor(color) {
+  let buttonReset = document.getElementsByClassName("color");
+  for (i = 0; i < 5; i++) {
+    buttonReset[i].style.backgroundColor = "darkslateblue";
+    buttonReset[i].style.border = "none";
+  }
+  document.getElementById("go").style.backgroundColor = "red";
+  document.getElementById("go").style.border = "3px black solid";
   color = document.getElementById("colorCode").value;
   for (i = 0; i < divs; i++) {
     grid[i].onmouseover = function () {
@@ -62,6 +75,13 @@ function customColor(color) {
 }
 
 function color(color) {
+  let buttonReset = document.getElementsByClassName("color");
+  for (i = 0; i < 5; i++) {
+    buttonReset[i].style.backgroundColor = "darkslateblue";
+    buttonReset[i].style.border = "none";
+  }
+  document.getElementById(color).style.backgroundColor = "red";
+  document.getElementById(color).style.border = "3px black solid";
   for (i = 0; i < divs; i++) {
     grid[i].onmouseover = function () {
       this.style.backgroundColor = color;
@@ -70,6 +90,13 @@ function color(color) {
 }
 
 function rainbow() {
+  let buttonReset = document.getElementsByClassName("color");
+  for (i = 0; i < 5; i++) {
+    buttonReset[i].style.backgroundColor = "darkslateblue";
+    buttonReset[i].style.border = "none";
+  }
+  document.getElementById("rainbow").style.backgroundColor = "red";
+  document.getElementById("rainbow").style.border = "3px black solid";
   for (i = 0; i < divs; i++) {
     grid[i].onmouseover = function () {
       this.style.backgroundColor =
